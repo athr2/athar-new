@@ -48,20 +48,16 @@ body{
 
 /* Hero */
 .hero{
-    background:url("../hero-bg.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
+    min-height:700px;
 
-    min-height:70vh;
+    background-image:url("../hero-bg.png") !important;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
 
     display:flex;
     align-items:center;
     justify-content:center;
-
-    text-align:center;
-    padding:40px 20px;
 }
 
 .hero-content{
