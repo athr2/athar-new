@@ -1,216 +1,55 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أثر - توثيق تجارب الطلبة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
-        }
-        body {
-            background-color: #f9f7f1;
-            color: #162a1c;
-            direction: rtl;
-            text-align: right;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 8%;
-            background-color: #162a1c;
-            color: #fff;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        .nav-links a.active {
-            color: #dfbc75;
-        }
-        .hero {
-            background-color: #162a1c;
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .main-title {
-            font-size: 4rem;
-            color: #dfbc75;
-            margin-bottom: 20px;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-        }
-        .btn-primary {
-            background-color: #dfbc75;
-            color: #162a1c;
-            border: none;
-            padding: 12px 35px;
-            border-radius: 25px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .btn-secondary {
-            background-color: transparent;
-            color: #fff;
-            border: 2px solid #dfbc75;
-            padding: 12px 35px;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-        .about-section {
-            padding: 80px 8%;
-            display: flex;
-            justify-content: center;
-        }
-        .about-card {
-            background-color: #fff;
-            border: 1px solid #e5dfcf;
-            border-radius: 30px;
-            padding: 40px;
-            max-width: 1000px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-        }
-        .about-text h2 {
-            font-size: 2rem;
-            color: #162a1c;
-            margin-bottom: 20px;
-        }
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            color: #555;
-        }
-        .btn-dark {
-            background-color: #162a1c;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .programs-section {
-            padding: 60px 8%;
-            text-align: center;
-        }
-        .programs-grid {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .program-card {
-            background: #fff;
-            border: 1px solid #e3dec9;
-            border-radius: 20px;
-            padding: 30px 20px;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.01);
-        }
-        .impact-count {
-            color: #cda65c;
-            font-weight: bold;
-            margin: 15px 0;
-            display: block;
-        }
-        .btn-card {
-            background-color: #162a1c;
-            color: #fff;
-            border: none;
-            padding: 8px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-    </style>
-</head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">أثر</div>
-            <ul class="nav-links">
-                <li><a href="#" class="active">الرئيسية</a></li>
-                <li><a href="#">البرامج</a></li>
-                <li><a href="#">عن أثر</a></li>
-                <li><a href="#">شارك أثرك</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="navbar">
 
-    <section class="hero">
-        <h1 class="main-title">أثر</h1>
-        <p class="subtitle">توثيق حي لتجارب الطلبة وآثار البرامج الشرعية في بناء العلم والوعي والإيمان.</p>
-        <div class="hero-buttons">
-            <button class="btn-primary">استكشف البرامج</button>
-            <button class="btn-secondary">شارك أثرك</button>
+    <div class="logo">أثر</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">البرامج</a></li>
+            <li><a href="#">عن أثر</a></li>
+            <li><a href="#">شارك أثرك</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <div class="hero-line"></div>
+
+            <h1>أثر</h1>
+
+            <p>
+                توثيق حي لتجارب الطلبة وآثار<br>
+                البرامج الشرعية في بناء العلم والوعي والإيمان.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn gold">
+                    استكشف البرامج
+                </a>
+
+                <a href="#" class="btn outline">
+                    شارك أثرك
+                </a>
+
+            </div>
+
+            <div class="scroll-icon">
+                ⌄
+            </div>
+
         </div>
-    </section>
 
-    <section class="about-section">
-        <div class="about-card">
-            <div class="about-text">
-                <h2>ما هو أثر؟</h2>
-                <p>أثر منصة توثق ما تتركه البرامج الشرعية من أثر في نفوس الطلبة، من خلال تجاربهم وكلماتهم الصادقة، ليكون مرجعاً يلهم ويفيد ويثمر.</p>
-                <button class="btn-dark">المزيد عن أثر</button>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="programs-section">
-        <h2 style="margin-bottom: 40px; font-size: 2.2rem;">البرامج</h2>
-        <div class="programs-grid">
-            <div class="program-card">
-                <h3>فقه الأولويات</h3>
-                <p>برنامج يساعد على ترتيب الأولويات وضبط المسار نحو الأهداف.</p>
-                <span class="impact-count">31 أثراً</span>
-                <button class="btn-card">عرض الآثار</button>
-            </div>
-            <div class="program-card">
-                <h3>تدبر</h3>
-                <p>برنامج يعين على تدبر القرآن وفهمه والعمل به.</p>
-                <span class="impact-count">27 أثراً</span>
-                <button class="btn-card">عرض الآثار</button>
-            </div>
-            <div class="program-card">
-                <h3>عالم</h3>
-                <p>مسار تكويني طويل وعميق لمن يطمح إلى التكوين العلمي الرسالي.</p>
-                <span class="impact-count">38 أثراً</span>
-                <button class="btn-card">عرض الآثار</button>
-            </div>
-            <div class="program-card">
-                <h3>البناء المنهجي</h3>
-                <p>مسار شرعي معرفي شامل يجمع بين التأصيل الشرعي والثقافة الإسلامية.</p>
-                <span class="impact-count">54 أثراً</span>
-                <button class="btn-card">عرض الآثار</button>
-            </div>
-        </div>
-    </section>
+</section>
 
-</body>
-</html>
+</body> 
