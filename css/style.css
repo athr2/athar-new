@@ -49,52 +49,62 @@ body{
 /* Hero */
 
 .hero{
+    background:url("hero-bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     min-height:70vh;
-    background:linear-gradient(rgba(47,79,63,.85),rgba(47,79,63,.85));
+
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+
     text-align:center;
     padding:40px 20px;
 }
 
 .hero-content{
+    max-width:350px;
     color:white;
 }
 
 .hero h1{
-    font-size:90px;
+    font-size:72px;
+    color:#d9b46d;
     margin-bottom:15px;
+    font-weight:800;
 }
 
 .hero p{
-    max-width:700px;
-    line-height:2;
-    font-size:22px;
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:25px;
 }
 
 .hero-buttons{
-    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
 .btn{
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:12px;
+    display:block;
+    padding:14px;
+    border-radius:14px;
     text-decoration:none;
-    margin:8px;
+    font-weight:700;
 }
 
 .primary{
-    background:var(--gold);
-    color:#222;
+    background:#d9b46d;
+    color:#1f382c;
 }
 
 .secondary{
-    border:2px solid white;
+    border:2px solid #d9b46d;
     color:white;
 }
-
 /* About */
 
 .about{
