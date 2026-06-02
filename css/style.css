@@ -1,55 +1,202 @@
-/* إعدادات عامة */
-body {
-    font-family: 'Cairo', 'Reem Kufi', sans-serif;
-    background-color: #f9f7f1;
-    color: #162a1c;
+/* 1. إعدادات عامة وتصفير الهوامش */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
 }
 
-/* تصميم قسم الهيرو كمثال على الألوان والخلفية الزيتية */
+body {
+    background-color: #f9f7f1; /* خلفية الصفحة البيج الناعمة */
+    color: #162a1c;
+    direction: rtl; /* لضمان الترتيب من اليمين لليسار */
+    text-align: right;
+}
+
+/* 2. تنسيق شريط التنقل العلوي (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #162a1c; /* اللون الزيتي الغامق */
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #dfbc75; /* اللون الذهبي عند التمرير */
+}
+
+/* 3. تنسيق القسم الرئيسي (Hero Section) */
 .hero {
     background-color: #162a1c;
-    background-image: url('assets/hero-bg-shadows.png'); /* تأثير ظلال أوراق الشجر */
-    background-size: cover;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-title {
-    font-family: 'Reem Kufi', serif;
     font-size: 4rem;
-    color: #dfbc75; /* اللون الذهبي/البيج المطفي */
+    color: #dfbc75;
+    margin-bottom: 20px;
 }
 
-/* الأزرار الفاخرة */
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* تنسيق الأزرار */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
 .btn-primary {
     background-color: #dfbc75;
     color: #162a1c;
     border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
+    padding: 12px 35px;
+    border-radius: 25px;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #cda65c;
 }
 
 .btn-secondary {
     background-color: transparent;
     color: #fff;
-    border: 1px solid #dfbc75;
+    border: 2px solid #dfbc75;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* 4. قسم "ما هو أثر؟" */
+.about-section {
+    padding: 80px 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    background-color: #fff;
+    border: 1px solid #e5dfcf;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #162a1c;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.btn-dark {
+    background-color: #162a1c;
+    color: #fff;
+    border: none;
     padding: 12px 30px;
     border-radius: 8px;
     cursor: pointer;
 }
 
-/* تصميم كروت البرامج الدائرية الفاخرة */
+/* 5. قسم البرامج والكروت (عرض أفقياً بجانب بعضها) */
+.programs-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    position: relative;
+    color: #162a1c;
+}
+
+.programs-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap; /* لتنزيل الكروت للسطر التالي في الشاشات الصغيرة */
+}
+
 .program-card {
     background: #fff;
     border: 1px solid #e3dec9;
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 250px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02); /* ظل خفيف جداً */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
 }
+
+.program-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0 10px 0;
+}
+
+.program-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    height: 70px; /* لتوحيد حجم النصوص */
+}
+
+.impact-count {
+    color: #cda65c;
+    font-weight: bold;
+    margin: 15px 0;
+    display: block;
+}
+
+.btn-card {
+    background-color: #162a1c;
+    color: #fff;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    }
