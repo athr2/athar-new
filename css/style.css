@@ -48,91 +48,58 @@ body{
 
 /* Hero */
 .hero{
-    min-height:700px;
-
-    background-image:url("../hero-bg.png") !important;
-    background-size:cover !important;
-    background-position:center !important;
-    background-repeat:no-repeat !important;
+    min-height:600px;
+    background-image:url("../hero-bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:flex-start;
+
+    padding-top:120px;
+    position:relative;
 }
 
 .hero-content{
-    max-width:350px;
+    max-width:500px;
+    text-align:center;
     color:white;
 }
 
 .hero h1{
-    font-size:72px;
+    font-size:80px;
     color:#d9b46d;
-    margin-bottom:15px;
-    font-weight:800;
-}
-
-.hero p{
-    font-size:18px;
-    line-height:1.9;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .hero-buttons{
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:15px;
+    margin-top:25px;
 }
 
 .btn{
-    display:block;
-    padding:14px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:700;
+    width:280px;
+    margin:auto;
 }
-
-.primary{
-    background:#d9b46d;
-    color:#1f382c;
-}
-
-.secondary{
-    border:2px solid #d9b46d;
-    color:white;
-}
-/* About */
 
 .about{
-    padding:60px 20px;
+    margin-top:-120px;
+    padding:0 20px 60px;
+    position:relative;
+    z-index:5;
 }
 
 .about-card{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     background:white;
-    border-radius:25px;
-    padding:40px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.about-card h2{
-    margin-bottom:20px;
-    color:var(--green);
-}
-
-.about-card p{
-    line-height:2;
-}
-
-.about-card button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:10px;
-    background:var(--green);
-    color:white;
+    border-radius:30px;
+    padding:50px 40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 /* Programs */
@@ -212,3 +179,39 @@ footer{
     text-align:center;
     padding:25px;
       }
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .navbar ul{
+        gap:10px;
+        font-size:14px;
+    }
+
+    .hero{
+        min-height:500px;
+        padding-top:80px;
+    }
+
+    .hero h1{
+        font-size:64px;
+    }
+
+    .hero-content{
+        max-width:90%;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .about{
+        margin-top:-70px;
+    }
+
+    .about-card{
+        padding:30px 20px;
+    }
+}
