@@ -1,82 +1,157 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>أثر</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أثر - توثيق تجارب الطلبة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<header class="navbar">
+    <header>
+        <nav class="navbar">
+            <div class="logo">أثر <img src="assets/logo-icon.png" alt="لوجو"></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">الرئيسية</a></li>
+                <li><a href="#">البرامج</a></li>
+                <li><a href="#">عن أثر</a></li>
+                <li><a href="#">شارك أثرك</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="logo">أثر</div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">أثر</h1>
+            <p class="subtitle">توثيق حي لتجارب الطلبة وآثار البرامج الشرعية في بناء العلم والوعي والإيمان.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">استكشف البرامج</button>
+                <button class="btn-secondary">شارك أثرك</button>
+            </div>
+        </div>
+    </section>
 
-<nav>
-<ul>
-<li><a href="#">الرئيسية</a></li>
-<li><a href="#">البرامج</a></li>
-<li><a href="#">عن أثر</a></li>
-<li><a href="#">شارك أثرك</a></li>
-</ul>
-</nav>
+    <section class="about-section">
+        <div class="about-card">
+            <div class="about-text">
+                <h2>ما هو أثر؟</h2>
+                <p>أثر منصة توثق ما تتركه البرامج الشرعية من أثر في نفوس الطلبة، من خلال تجاربهم وكلماتهم الصادقة، ليكون مرجعاً يلهم ويفيد ويثمر.</p>
+                <button class="btn-dark">المزيد عن أثر</button>
+            </div>
+            <div class="about-image">
+                <img src="assets/about-arch.jpg" alt="عن أثر">
+            </div>
+        </div>
+    </section>
 
-</header>
+    <section class="programs-section">
+        <h2 class="section-title">البرامج</h2>
+        <div class="slider-container">
+            <button class="slider-btn prev">➔</button>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="assets/icon1.png" alt="فقه الأولويات" class="card-icon">
+                    <h3>فقه الأولويات</h3>
+                    <p>برنامج يساعد على ترتيب الأولويات وضبط المسار نحو الأهداف.</p>
+                    <span class="impact-count">31 أثراً</span>
+                    <button class="btn-card">عرض الآثار</button>
+                </div>
+                <div class="program-card">
+                    <img src="assets/icon2.png" alt="تدبر" class="card-icon">
+                    <h3>تدبر</h3>
+                    <p>برنامج يعين على تدبر القرآن وفهمه والعمل به.</p>
+                    <span class="impact-count">27 أثراً</span>
+                    <button class="btn-card">عرض الآثار</button>
+                </div>
+                <div class="program-card">
+                    <img src="assets/icon3.png" alt="عالم" class="card-icon">
+                    <h3>عالم</h3>
+                    <p>مسار تكويني طويل وعميق لمن يطمح إلى التكوين العلمي الرسالي.</p>
+                    <span class="impact-count">38 أثراً</span>
+                    <button class="btn-card">عرض الآثار</button>
+                </div>
+                <div class="program-card">
+                    <img src="assets/icon4.png" alt="البناء المنهجي" class="card-icon">
+                    <h3>البناء المنهجي</h3>
+                    <p>مسار شرعي معرفي شامل يجمع بين التأصيل الشرعي والثقافة الإسلامية.</p>
+                    <span class="impact-count">54 أثراً</span>
+                    <button class="btn-card">عرض الآثار</button>
+                </div>
+            </div>
 
-<section class="hero">
+            <button class="slider-btn next">➔</button>
+        </div>
+    </section>
 
-<div class="overlay">
+    <section class="quote-banner">
+        <div class="quote-content">
+            <span class="quote-tag">أثر اليوم</span>
+            <blockquote>
+                "كان البناء المنهجي نقطة التحول الحقيقية في علاقتي بطلب العلم، ومنه بدأت رحلتي الجادة في التعلم."
+            </blockquote>
+            <cite>— مجهول —</cite>
+        </div>
+    </section>
 
-<div class="hero-content">
+    <section class="stats-section">
+        <h2 class="section-title">إحصائيات</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>12</h3>
+                <p>برنامجاً</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-comments"></i>
+                <h3>245</h3>
+                <p>أثراً منشوراً</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-users"></i>
+                <h3>180</h3>
+                <p>مشاركاً</p>
+            </div>
+        </div>
+    </section>
 
-<h1>أثر</h1>
+    <section class="testimonials-section">
+        <h2 class="section-title">اقتباسات مختارة</h2>
+        <div class="testimonials-grid">
+            <div class="testi-card">
+                <p>"ساعدني فقه الأولويات على ترتيب أموري والنظر لما هو أهم في حياتي."</p>
+                <cite>— مها</cite>
+            </div>
+            <div class="testi-card">
+                <p>"وجدت في تدبر حياة مختلفة مع القرآن، وبركة لا توصف في اليوم والليلة."</p>
+                <cite>— يوسف</cite>
+            </div>
+            <div class="testi-card">
+                <p>"برنامج عالم فتح لي آفاقاً جديدة في طلب العلم ووسع في قلبي حب الرسالة."</p>
+                <cite>— فاطمة</cite>
+            </div>
+        </div>
+    </section>
 
-<p>
-توثيق حي لتجارب الطلبة وآثار البرامج الشرعية
-في بناء العلم والوعي والإيمان.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="btn gold">
-استكشف البرامج
-</a>
-
-<a href="#" class="btn outline">
-شارك أثرك
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about-card">
-
-<div class="about-text">
-
-<h2>ما هو أثر؟</h2>
-
-<p>
-أثر منصة توثق ما تتركه البرامج الشرعية من أثر
-في نفوس الطلبة من خلال تجاربهم وكلماتهم الصادقة.
-</p>
-
-<a href="#" class="more-btn">
-المزيد عن أثر
-</a>
-
-</div>
-
-</section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">أثر</div>
+            <ul class="footer-links">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">البرامج</a></li>
+                <li><a href="#">عن أثر</a></li>
+                <li><a href="#">شارك أثرك</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <p class="copyright">جميع الحقوق محفوظة © أثر 2024</p>
+        </div>
+    </footer>
 
 </body>
-</html>
+                      </html>
